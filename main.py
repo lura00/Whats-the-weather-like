@@ -6,7 +6,7 @@ import tkinter as tk
 def get_weather(canvas):
     city = textField.get()
     api = f"http://api.openweathermap.org/data/2.5/weather?q=" + \
-        city + "&units=metric&appid=f8384513fad5f91ea04d07a2cbf916ec"
+        city + "&units=metric&appid=aee454f3fe00a9f1f321d2b4376a4bd1"
     json_data = requests.get(api).json()
     condition = json_data['weather'][0]['main']
     temp = json_data['main']['temp']
